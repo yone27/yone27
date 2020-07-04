@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html class="no-js" lang="<?= Yii::$app->language ?>" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | My SimMobile</title>
+    <link rel="stylesheet" href="../../assets/fontawesome/css/all.css">
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/main.min.css">
+    <link rel="stylesheet" href="../assets/dist/css/preview.min.css">
+</head>
+
+<body class="one-page" data-loader="<?= $loader ?>">
+    <header class="menu-b" data-spy="affix" data-offset-top="0">
+        <nav class="navbar" role="navigation">
+            <div class="container fluid-md-less">
+                <div class="navbar-header">
+                    <button class="navbar-toggle collapsed" title="Mobile menu" aria-label="Mobile menu" type="button" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+						<span class="sr-only"> Mobile menu </span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+                    <a class="navbar-brand" title="Go to home My Mobile" aria-label="Go to home My Mobile" href="./index.html">
+                        <figure>
+                            <picture>
+                                <source srcset="../assets/images/logo.webp" type="image/webp">
+                                <img src="../assets/images/logo.png" title="My Mobile Logo" alt="My Mobile Logo">
+                            </picture>
+                        </figure>
+                    </a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="menu" aria-expanded="false">
+                    <a title="Go to home MyMobile" aria-label="Go to home My Mobile" href="./index.html">
+                        <figure>
+                            <picture>
+                                <source srcset="../assets/images/logo-white.webp" type="image/webp">
+                                <img class="img-responsive collapsed-brand" src="../assets/images/logo-white.png" title="My Mobile logo white" alt="My Mobile logo white">
+                            </picture>
+                        </figure>
+                    </a>
+                    <div class="hidden-md hidden-lg text-center mb30">
+                        <div class="dropdown language">
+                            <a class="dropdown-toggle text-white" role="button" data-toggle="dropdown" title="Spanish" aria-label="Spanish">
+                                <img class="flag" src="../assets/images/flags/es.png" title="Spanish" alt="Spanish"> Spanish </a>
+                            <a class="dropdown-toggle text-white" role="button" data-toggle="dropdown" title="English" aria-label="English">
+                                <img class="flag" src="../assets/images/flags/en.png" title="English" alt="English"> English </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownLanguage">
+                                <li class="">
+                                    <a title="Spanish" aria-label="Spanish" href="">
+                                        <img class="flag" src="../assets/images/flags/es.png" title="Spanish" alt="Spanish"> Spanish </a>
+                                </li>
+                                <li class="">
+                                    <a title="English" aria-label="English" href="">
+                                        <img class="flag" src="../assets/images/flags/en.png" title="English" alt="English"> English </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="hidden-md hidden-lg text-center mb30">
+                        <div class="dropdown login">
+                            <a title="User profile: Aron Smith" aria-label="User profile: Aron Smith" type="button" class="dropdown-toggle btn btn-gray-lighter" data-toggle="dropdown">
+                                <span class="profile-letters"> AP </span>
+                                <span> Aron Smith </span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownLogin">
+                                <li>
+                                    <a title="My account" aria-label="My account" role="button"> My account </a>
+                                </li>
+                                <li>
+                                    <a title="Logout" aria-label="Logout" role="button"> Logout </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--Menu-->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a title="Home" aria-label="Home" href="#index"> Home </a>
+                        </li>
+                        <li class="dropdown">
+                            <a title="About" aria-label="About" href="#about"> About </a>
+                        </li>
+                        <li class="dropdown">
+                            <a title="Products" aria-label="Products" href="#products"> Products </a>
+                        </li>
+                        <li class="dropdown">
+                            <a title="Contact" aria-label="Contact" href="#contact"> Contact </a>
+                        </li>
+                    </ul>
+                    <!--/Menu-->
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="wrapper">
+        <!--breadcrumb-->
+        <div class="breadcrumb-container">
+            <section class="container fluid-md-less">
+                <article class="row">
+                    <header class="col-md-12">
+                        <nav class="navbar-breadcrumb">
+                            <ol class="breadcrumb-list">
+                                <li class="breadcrumb-item">
+                                    <a title="Home" aria-label="Home" href="./index.html"> Home </a>
+                                </li>
+                                <li class="breadcrumb-item active"> Products </li>
+                            </ol>
+                        </nav>
+                    </header>
+                </article>
+            </section>
+        </div>
+        <!--/breadcrumb-->
+        <!--products section-->
+        <div class="section">
+            <div class="container fluid-md-less">
+                <div class="row">
+                    <!--sidebar-->
+                    <section class="col-md-3 col-md-push-9">
+                        <!--Filters-->
+                        <aside class="sidebar-menu sidebar-nav">
+                            <!--search box-->
+                            <div class="input-group search-sidebar">
+                                <input id="input-search" class="form-control input-search" placeholder="Search" type="text">
+                                <span class="input-group-btn">
+									<button id="btn-search"
+										class="btn btn-search"
+										title="Search"
+										aria-label="Search"
+										type="button">
+										<i class="fa fa-search"></i>
+									</button>
+									<label for="input-search"
+										class="hidden"></label>
+								</span>
+                            </div>
+                            <!--/search box-->
+                            <!--filters components-->
+                            <button class="btn btn-primary btn-block visible-xs visible-sm mt20 mb20" title="Filters" aria-label="Filters" type="button" data-toggle="collapse" data-target="#filters" aria-expanded="false" aria-controls="collapseExample"> Filters </button>
+                            <div class="collapse collapse-sidebar" id="filters">
+                                <!--categories-->
+                                <h3 class="ll"> Categories </h3>
+                                <nav class="navbar" role="navigation">
+                                    <div class="navbar-collapse">
+                                        <ul id="ul1" class="nav navbar-nav">
+                                            <li>
+                                                <a class="collapsed" title="Category-01" aria-label="Category-01" role="button" data-toggle="collapse" aria-expanded="false" data-target="#dataToggle1" data-parent="#ul1"> Category-01 </a>
+                                                <div id="dataToggle1" class="collapse">
+                                                    <ul id="ul2" class="nav nav-list">
+                                                        <li>
+                                                            <a title="Category-02" aria-label="Category-02" role="button"> Category-02 </a>
+                                                        </li>
+                                                        <li>
+                                                            <a title="Category-03" aria-label="Category-03" role="button"> Category-03 </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a title="Category-04" aria-label="Category-04" role="button"> Category-04 </a>
+                                            </li>
+                                            <li>
+                                                <a title="Category-05" aria-label="Category-05" role="button"> Category-05 </a>
+                                            </li>
+                                            <li>
+                                                <a title="Category-06" aria-label="Category-06" role="button"> Category-06 </a>
+                                            </li>
+                                            <li>
+                                                <a title="Category-07" aria-label="Category-07" role="button"> Category-07 </a>
+                                            </li>
+                                            <li>
+                                                <a title="Category-08" aria-label="Category-08" role="button"> Category-08 </a>
+                                            </li>
+                                            <li>
+                                                <a title="Category-09" aria-label="Category-09" role="button"> Category-09 </a>
+                                            </li>
+                                            <li>
+                                                <a title="Category-010" aria-label="Category-10" role="button"> Category-10 </a>
+                                            </li>
+                                            <li>
+                                                <a title="Category-11" aria-label="Category-11" role="button"> Category-11 </a>
+                                            </li>
+                                            <li>
+                                                <a title="Category-12" aria-label="Category-12" role="button"> Category-12 </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                                <!--/categories-->
+                                <!--tags -->
+                                <h3 class="hidden-xs hidden-sm ll"> Tags </h3>
+                                <nav class="tags hidden-xs hidden-sm">
+                                    <ul>
+                                        <li class="tag">
+                                            <a title="Tag 1" aria-label="Tag 1" role="button"> Tag 1 </a>
+                                        </li>
+                                        <li class="tag">
+                                            <a title="Tag 2" aria-label="Tag 2" role="button"> Tag 2 </a>
+                                        </li>
+                                        <li class="tag">
+                                            <a title="Tag 3" aria-label="Tag 3" role="button"> Tag 3 </a>
+                                        </li>
+                                        <li class="tag">
+                                            <a title="Tag 4" aria-label="Tag 4" role="button"> Tag 4 </a>
+                                        </li>
+                                        <li class="tag">
+                                            <a title="Tag 5" aria-label="Tag 5" role="button"> Tag 5 </a>
+                                        </li>
+                                        <li class="tag">
+                                            <a title="Tag 6" aria-label="Tag 6" role="button"> Tag 6 </a>
+                                        </li>
+                                        <li class="tag">
+                                            <a title="Tag 7" aria-label="Tag 7" role="button"> Tag 7 </a>
+                                        </li>
+                                        <li class="tag">
+                                            <a title="Tag 8" aria-label="Tag 8" role="button"> Tag 8 </a>
+                                        </li>
+                                        <li class="tag">
+                                            <a title="Tag 9" aria-label="Tag 9" role="button"> Tag 9 </a>
+                                        </li>
+                                        <li class="tag">
+                                            <a title="Tag 10" aria-label="Tag 10" role="button"> Tag 10 </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <!--/tags -->
+                                <button class="btn btn-primary btn-block visible-xs visible-sm mt20 mb20" title="Close filters" aria-label="Close filters" type="button" data-toggle="collapse" data-target="#filters" aria-expanded="false" aria-controls="filters"> Close filters </button>
+                            </div>
+                            <!--/filters components-->
+                        </aside>
+                        <!--/Filters-->
+                    </section>
+                    <!--/sidebar-->
+                    <!--products-->
+                    <div class="col-md-9 col-md-pull-3">
+                        <section class="row">
+                            <!--cards-->
+                            <article class="col-md-6">
+                                <div class="card card-products card-products-b">
+                                    <header class="content">
+                                        <h2 class="title shorter">
+                                            <a title="More info about: LG V-30" aria-label="More info about: LG V-30" href="./viewProducts.html"> LG V-30 </a>
+                                        </h2>
+                                    </header>
+                                    <aside class="aspect-rectangular hover full center middle hover-h">
+                                        <div class="hover-content">
+                                            <div class="overlay"></div>
+                                            <div class="hover-body">
+                                                <a class="btn btn-info" title="More info about: LG V-30" aria-label="More info about: LG V-30" href="./viewProducts.html"> More info </a>
+                                            </div>
+                                        </div>
+                                        <figure>
+                                            <picture>
+                                                <source srcset="../assets/images/lgV30.webp" type="image/webp">
+                                                <img class="lazy-load" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-original="../assets/images/lgV30.jpg" title="Title of: LG V-30" alt="Decription of: LG V-30">
+                                            </picture>
+                                        </figure>
+                                    </aside>
+                                    <footer class="content">
+                                        <p class="summary product-box-default"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec viverra neque, a bibendum enim. Donec a efficitur nibh. </p>
+                                        <a class="btn btn-primary btn-lg btn-block-xs btn-block-sm" title="Add to cart: LG V-30" aria-label="Add to cart: LG V-30">
+                                            <i class="fas fa-cart-plus"></i> 360€ </a>
+                                    </footer>
+                                </div>
+                            </article>
+                            <article class="col-md-6">
+                                <div class="card card-products card-products-b">
+                                    <header class="content">
+                                        <h2 class="title shorter">
+                                            <a title="More info about: Motorola one" aria-label="More info about: Motorola one" href="./viewProducts.html"> Motorola one </a>
+                                        </h2>
+                                    </header>
+                                    <aside class="aspect-rectangular hover full center middle hover-h">
+                                        <div class="hover-content">
+                                            <div class="overlay"></div>
+                                            <div class="hover-body">
+                                                <a class="btn btn-info" title="More info about: Motorola one" aria-label="More info about: Motorola one" href="./viewProducts.html"> More info </a>
+                                            </div>
+                                        </div>
+                                        <figure>
+                                            <picture>
+                                                <source srcset="../assets/images/motorolaOne.webp" type="image/webp">
+                                                <img class="lazy-load" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-original="../assets/images/motorolaOne.jpg" title="Title of: Motorola one" alt="Decription of: Motorola one">
+                                            </picture>
+                                        </figure>
+                                    </aside>
+                                    <footer class="content">
+                                        <p class="summary product-box-default"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec viverra neque, a bibendum enim. Donec a efficitur nibh. </p>
+                                        <a class="btn btn-primary btn-lg btn-block-xs btn-block-sm" title="Add to cart: Motorola one" aria-label="Add to cart: Motorola one">
+                                            <i class="fas fa-cart-plus"></i> 487€ </a>
+                                    </footer>
+                                </div>
+                            </article>
+                            <article class="col-md-6">
+                                <div class="card card-products card-products-b">
+                                    <header class="content">
+                                        <h2 class="title shorter">
+                                            <a title="More info about: Nokia 3310" aria-label="More info about: Nokia 3310" href="./viewProducts.html"> Nokia 3310 </a>
+                                        </h2>
+                                    </header>
+                                    <aside class="aspect-rectangular hover full center middle hover-h">
+                                        <div class="hover-content">
+                                            <div class="overlay"></div>
+                                            <div class="hover-body">
+                                                <a class="btn btn-info" title="More info about: Nokia 3310" aria-label="More info about: Nokia 3310" href="./viewProducts.html"> More info </a>
+                                            </div>
+                                        </div>
+                                        <figure>
+                                            <picture>
+                                                <source srcset="../assets/images/nokia3310.webp" type="image/webp">
+                                                <img class="lazy-load" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-original="../assets/images/nokia3310.jpg" title="Title of: Nokia 3310" alt="Decription of: Nokia 3310">
+                                            </picture>
+                                        </figure>
+                                    </aside>
+                                    <footer class="content">
+                                        <p class="summary product-box-default"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec viverra neque, a bibendum enim. Donec a efficitur nibh. </p>
+                                        <a class="btn btn-primary btn-lg btn-block-xs btn-block-sm" title="Add to cart: Nokia 3310" aria-label="Add to cart: Nokia 3310">
+                                            <i class="fas fa-cart-plus"></i> 310€ </a>
+                                    </footer>
+                                </div>
+                            </article>
+                            <article class="col-md-6">
+                                <div class="card card-products card-products-b">
+                                    <header class="content">
+                                        <h2 class="title shorter">
+                                            <a title="More info about: Samsung Galaxy Note 9" aria-label="More info about: Samsung Galaxy Note 9" href="./viewProducts.html"> Samsung Galaxy Note 9 </a>
+                                        </h2>
+                                    </header>
+                                    <aside class="aspect-rectangular hover full center middle hover-h">
+                                        <div class="hover-content">
+                                            <div class="overlay"></div>
+                                            <div class="hover-body">
+                                                <a class="btn btn-info" title="More info about: Samsung Galaxy Note 9" aria-label="More info about: Samsung Galaxy Note 9" href="./viewProducts.html"> More info </a>
+                                            </div>
+                                        </div>
+                                        <figure>
+                                            <picture>
+                                                <source srcset="../assets/images/note9-1.webp" type="image/webp">
+                                                <img class="lazy-load" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-original="../assets/images/note9-1.jpg" title="Title of: Samsung Galaxy Note 9" alt="Decription of: Samsung Galaxy Note 9">
+                                            </picture>
+                                        </figure>
+                                    </aside>
+                                    <footer class="content">
+                                        <p class="summary product-box-default"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec viverra neque, a bibendum enim. Donec a efficitur nibh. </p>
+                                        <a class="btn btn-primary btn-lg btn-block-xs btn-block-sm" title="Add to cart: Samsung Galaxy Note 9" aria-label="Add to cart: Samsung Galaxy Note 9">
+                                            <i class="fas fa-cart-plus"></i> 755€ </a>
+                                    </footer>
+                                </div>
+                            </article>
+                            <article class="col-md-6">
+                                <div class="card card-products card-products-b">
+                                    <header class="content">
+                                        <h2 class="title shorter">
+                                            <a title="More info about: Sony Experia L1" aria-label="More info about: Sony Experia L1" href="./viewProducts.html"> Sony Experia L1 </a>
+                                        </h2>
+                                    </header>
+                                    <aside class="aspect-rectangular hover full center middle hover-h">
+                                        <div class="hover-content">
+                                            <div class="overlay"></div>
+                                            <div class="hover-body">
+                                                <a class="btn btn-info" title="More info about: Sony Experia L1" aria-label="More info about: Sony Experia L1" href="./viewProducts.html"> More info </a>
+                                            </div>
+                                        </div>
+                                        <figure>
+                                            <picture>
+                                                <source srcset="../assets/images/sonyXperiaL1.webp" type="image/webp">
+                                                <img class="lazy-load" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-original="../assets/images/sonyXperiaL1.jpg" title="Title of: Sony Experia L1" alt="Decription of: Sony Experia L1">
+                                            </picture>
+                                        </figure>
+                                    </aside>
+                                    <footer class="content">
+                                        <p class="summary product-box-default"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec viverra neque, a bibendum enim. Donec a efficitur nibh. </p>
+                                        <a class="btn btn-primary btn-lg btn-block-xs btn-block-sm" title="Add to cart: Sony Xperia L1" aria-label="Add to cart: Sony Xperia L1">
+                                            <i class="fas fa-cart-plus"></i> 652€ </a>
+                                    </footer>
+                                </div>
+                            </article>
+                            <article class="col-md-6">
+                                <div class="card card-products card-products-b">
+                                    <header class="content">
+                                        <h2 class="title shorter">
+                                            <a title="More info about: Sony Xperia XA2" aria-label="More info about: Sony Xperia XA2" href="./viewProducts.html"> Sony Xperia XA2 </a>
+                                        </h2>
+                                    </header>
+                                    <aside class="aspect-rectangular hover full center middle hover-h">
+                                        <div class="hover-content">
+                                            <div class="overlay"></div>
+                                            <div class="hover-body">
+                                                <a class="btn btn-info" title="More info about: Sony Xperia XA2" aria-label="More info about: Sony Xperia XA2" href="./viewProducts.html"> More info </a>
+                                            </div>
+                                        </div>
+                                        <figure>
+                                            <picture>
+                                                <source srcset="../assets/images/sonyXperiaXa2.webp" type="image/webp">
+                                                <img class="lazy-load" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-original="../assets/images/sonyXperiaXa2.jpg" title="Title of: Sony Xperia XA2" alt="Decription of: Sony Xperia XA2">
+                                            </picture>
+                                        </figure>
+                                    </aside>
+                                    <footer class="content">
+                                        <p class="summary product-box-default"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec viverra neque, a bibendum enim. Donec a efficitur nibh. </p>
+                                        <a class="btn btn-primary btn-lg btn-block-xs btn-block-sm" title="Add to cart: Sony Xperia XA2" aria-label="Add to cart: Sony Xperia XA2">
+                                            <i class="fas fa-cart-plus"></i> 570€ </a>
+                                    </footer>
+                                </div>
+                            </article>
+                            <article class="col-md-6">
+                                <div class="card card-products card-products-b">
+                                    <header class="content">
+                                        <h2 class="title shorter">
+                                            <a title="More info about: Xiaomi Mi 8" aria-label="More info about: Xiaomi Mi 8" href="./viewProducts.html"> Xiaomi Mi 8 </a>
+                                        </h2>
+                                    </header>
+                                    <aside class="aspect-rectangular hover full center middle hover-h">
+                                        <div class="hover-content">
+                                            <div class="overlay"></div>
+                                            <div class="hover-body">
+                                                <a class="btn btn-info" title="More info about: Xiaomi Mi 8" aria-label="More info about: Xiaomi Mi 8" href="./viewProducts.html"> More info </a>
+                                            </div>
+                                        </div>
+                                        <figure>
+                                            <picture>
+                                                <source srcset="../assets/images/xiaomiMi8.webp" type="image/webp">
+                                                <img class="lazy-load" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-original="../assets/images/xiaomiMi8.jpg" title="Title of: Xiaomi Mi 8" alt="Decription of: Xiaomi Mi 8">
+                                            </picture>
+                                        </figure>
+                                    </aside>
+                                    <footer class="content">
+                                        <p class="summary product-box-default"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec viverra neque, a bibendum enim. Donec a efficitur nibh. </p>
+                                        <a class="btn btn-primary btn-lg btn-block-xs btn-block-sm" title="Add to cart: Xiaomi Mi 8" aria-label="Add to cart: Xiaomi Mi 8">
+                                            <i class="fas fa-cart-plus"></i> 493€ </a>
+                                    </footer>
+                                </div>
+                            </article>
+                            <article class="col-md-6">
+                                <div class="card card-products card-products-b">
+                                    <header class="content">
+                                        <h2 class="title shorter">
+                                            <a title="More info about: Xiaomi Mi Mix 2" aria-label="More info about: Xiaomi Mi Mix 2" href="./viewProducts.html"> Xiaomi Mi Mix 2 </a>
+                                        </h2>
+                                    </header>
+                                    <aside class="aspect-rectangular hover full center middle hover-h">
+                                        <div class="hover-content">
+                                            <div class="overlay"></div>
+                                            <div class="hover-body">
+                                                <a class="btn btn-info" title="More info about: Xiaomi Mi Mix 2" aria-label="More info about: Xiaomi Mi Mix 2" href="./viewProducts.html"> More info </a>
+                                            </div>
+                                        </div>
+                                        <figure>
+                                            <picture>
+                                                <source srcset="../assets/images/xiaomiMimix2.webp" type="image/webp">
+                                                <img class="lazy-load" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-original="../assets/images/xiaomiMimix2.jpg" title="Title of: Xiaomi Mi Mix 2" alt="Decription of: Xiaomi Mi Mix 2">
+                                            </picture>
+                                        </figure>
+                                    </aside>
+                                    <footer class="content">
+                                        <p class="summary product-box-default"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec viverra neque, a bibendum enim. Donec a efficitur nibh. </p>
+                                        <a class="btn btn-primary btn-lg btn-block-xs btn-block-sm" title="Add to cart: Xiaomi Mi Mix 2" aria-label="Add to cart: Xiaomi Mi Mix 2">
+                                            <i class="fas fa-cart-plus"></i> 435€ </a>
+                                    </footer>
+                                </div>
+                            </article>
+                            <!--/cards-->
+                            <!--pagination -->
+                            <aside class="col-md-12 text-center">
+                                <nav class="pagination" title="Page navigation" aria-label="Page navigation">
+                                    <ul class="pagination">
+                                        <li>
+                                            <a title="Previous" aria-label="Previous" role="button">
+                                                <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item active">
+                                            <a class="page-link" title="1" aria-label="1" role="button">1 </a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" title="2" aria-label="2" role="button">2 </a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" title="3" aria-label="3" role="button">3 </a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" title="4" aria-label="4" role="button">4 </a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" title="5" aria-label="5" role="button">5 </a>
+                                        </li>
+                                        <li>
+                                            <a title="Next" aria-label="Next" role="button">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </aside>
+                            <!--/pagination -->
+                            <!--tags -->
+                            <article class="col-md-12 hidden-lg hidden-md">
+                                <h3 class="ll"> Tags </h3>
+                                <nav class="tags">
+                                    <ul>
+                                        <li class="tag">
+                                            <a title="Tag 1" aria-label="Tag 1" role="button"> Tag 1 </a>
+                                        </li>
+                                        <li class="tag">
+                                            <a title="Tag 2" aria-label="Tag 2" role="button"> Tag 2 </a>
+                                        </li>
+                                        <li class="tag">
+                                            <a title="Tag 3" aria-label="Tag 3" role="button"> Tag 3 </a>
+                                        </li>
+                                        <li class="tag">
+                                            <a title="Tag 4" aria-label="Tag 4" role="button"> Tag 4 </a>
+                                        </li>
+                                        <li class="tag">
+                                            <a title="Tag 5" aria-label="Tag 5" role="button"> Tag 5 </a>
+                                        </li>
+                                        <li class="tag">
+                                            <a title="Tag 6" aria-label="Tag 6" role="button"> Tag 6 </a>
+                                        </li>
+                                        <li class="tag">
+                                            <a title="Tag 7" aria-label="Tag 7" role="button"> Tag 7 </a>
+                                        </li>
+                                        <li class="tag">
+                                            <a title="Tag 8" aria-label="Tag 8" role="button"> Tag 8 </a>
+                                        </li>
+                                        <li class="tag">
+                                            <a title="Tag 9" aria-label="Tag 9" role="button"> Tag 9 </a>
+                                        </li>
+                                        <li class="tag">
+                                            <a title="Tag 10" aria-label="Tag 10" role="button"> Tag 10 </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </article>
+                            <!--/tags -->
+                        </section>
+                    </div>
+                    <!--/products-->
+                </div>
+            </div>
+        </div>
+        <!--/products section-->
+    </main>
+    <footer class="center">
+        <div class="footer" data-background-url="../assets/images/footer.jpg" data-fixed="true">
+            <div class="overlay semi-transparent"></div>
+            <section class="row m0">
+                <aside class="col-md-6">
+                    <div class="spacing-footer">
+                        <a class="footer-brand" title="Go to home My Mobile" aria-label="Go to home My Mobile" href="./index.html">
+                            <figure>
+                                <picture>
+                                    <source srcset="../assets/images/logo-white.webp" type="image/webp">
+                                    <img class="img-responsive collapsed-brand" src="../assets/images/logo-white.png" title="My Mobile Logo white" alt="My Mobile Logo white">
+                                </picture>
+                            </figure>
+                        </a>
+                        <ul class="social original mt30">
+                            <li>
+                                <a title="Share on: Facebook" aria-label="Share on: Facebook" role="button">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a title="Share on: Google Plus" aria-label="Share on:  Google Plus" role="button">
+                                    <i class="fab fa-google-plus"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a title="Share on: Pinterest" aria-label="Share on:  Pinterest" role="button">
+                                    <i class="fab fa-pinterest"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a title="Share on: Twitter" aria-label="Share on: Twitter" role="button">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+                <article class="col-md-6">
+                    <div class="spacing-footer pl50-md pl100-lg">
+                        <header>
+                            <h4 class="h2 ll"> Our <span>Data</span>
+                            </h4>
+                        </header>
+                        <address>
+							<div class="address">
+								<i class="fas fa-map-marker mr5"></i>
+								<b> Address: </b> La Marina ST. 35, Santa Cruz de Tenerife, Spain </div>
+							<div class="address">
+								<i class="fas fa-phone mr5"></i>
+								<b> Tel: <sup>1</sup>
+								</b> +34 922 985 058 </div>
+							<div class="address">
+								<i class="fas fa-phone mr5"></i>
+								<b> Tel: <sup>2</sup>
+								</b> +34 922 985 058 - ext 101 </div>
+							<div class="address">
+								<i class="fas fa-mobile mr5"></i>
+								<b> Cell: <sup>1</sup>
+								</b> +34 922 985 058 </div>
+							<div class="address">
+								<i class="fas fa-mobile mr5"></i>
+								<b> Cell: <sup>2</sup>
+								</b> +34 922 985 058 - ext 101 </div>
+							<div class="address">
+								<i class="fas fa-fax mr5"></i>
+								<b> Fax: </b> +34 922 985 058 </div>
+							<div class="address">
+								<i class="fas fa-envelope mr5"></i>
+								<b> Email: </b>
+								<a title="Email"
+									aria-label="Email"
+									role="button"> info@mymobile.com </a>
+							</div>
+						</address>
+                    </div>
+                </article>
+            </section>
+        </div>
+        <div class="sub-footer">
+            <div class="container fluid-md-less">
+                <section class="row">
+                    <article class="col-sm-6 col-sm-offset-3 mb20">
+                        <div class="copyright">
+                            <p>
+                                <i class="fa fa-copyright"></i> 2019, All rights reserved <b> My Mobile </b>
+                            </p>
+                            <p> Designed and developed by:
+                                <a title="yonex27000@gmail.com" aria-label="yonex27000@gmail.com" target="_blank" rel="noopener" href="mailto:yonex27000@gmail.com">
+                                    <b> yonex27000@gmail.com </b>
+                                </a>
+                            </p>
+                        </div>
+                    </article>
+                    <article class="col-sm-6 col-sm-offset-3">
+                        <div class="advice">
+                            <p>
+                                <a title="Cookies policy" aria-label="Cookies policy" role="button">
+                                    <i class="fas fa-gavel ml5"></i>
+                                    <b> Cookies policy </b>
+                                </a>
+                                <a title="Legal warning" aria-label="Legal warning" role="button">
+                                    <i class="fas fa-balance-scale ml5"></i>
+                                    <b> Legal warning </b>
+                                </a>
+                                <a title="Sell conditions" aria-label="Sell conditions" role="button">
+                                    <i class="fas fa-credit-card ml5"></i>
+                                    <b> Sell conditions </b>
+                                </a>
+                            </p>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </div>
+    </footer>
+    <a class="btn btn-primary back-to-top" title="Go up" aria-label="Go up">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <script src="../../assets/js/jquery.min.js"></script>
+    <script src="../../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/dist/js/main.min.js"></script>
+    <script src="../../assets/js/jquery/buttons.js"></script>
+    <script src="../../assets/js/jquery/helpers.js"></script>
+    <script src="../../assets/js/jquery/horizontal-nav.js"></script>
+    <script src="../../assets/js/jquery/sidebar.js"></script>
+</body>
+
+</html>
