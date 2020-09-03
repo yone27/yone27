@@ -59,6 +59,9 @@ let navButton = document.getElementById("nav-button"),
     menu = document.querySelector(".header.header-a")
 
 navButton.addEventListener('click', function() {
-    console.log('aloooo')
-    menu.classList.toggle('left');
+    if(menu.classList.contains('left')) {
+        menu.classList.remove('left')
+    } else {
+        menu.classList.add('left')
+    }
 })
