@@ -1,0 +1,6 @@
+body.transparent > header .navbar .navbar-nav li a {
+    padding-right: 15px !important;
+}
+body > header .navbar li.dropdown::after {
+    content: '';
+}

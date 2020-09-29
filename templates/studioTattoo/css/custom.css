@@ -1,0 +1,9 @@
+body > header.menu-b .navbar .navbar-nav li.dropdown:hover > a {
+    color: #222;
+}
+body.transparent > header .navbar .navbar-nav li a {
+    padding-right: 15px !important;
+}
+body > header .navbar li.dropdown::after {
+    content: '';
+}
