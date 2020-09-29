@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Law Firm | Home</title>
+    <link rel="stylesheet"
+        href="./fontawesome/css/all.css" />
+    <link rel="stylesheet"
+        href="./css/bootstrap.min.css" />
+    <link rel="stylesheet"
+        href="./css/main.core.min.css" />
+    <link rel="stylesheet"
+        href="./css/preview.min.css" />
+</head>
+
+<body class="transparent">
+    <header class="menu-mini" data-spy="affix" data-offset-top="0">
+        <nav class="navbar" role="navigation">
+            <div class="container fluid-md-less">
+                <div class="navbar-header">
+                    <button class="navbar-toggle collapsed" title="Mobile menu" aria-label="Mobile menu" type="button" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+                            <span class="sr-only">
+                                Mobile menu
+                            </span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    <a class="navbar-brand" title="Go to home My Lawyer" aria-label="Go to home My Lawyer" href="./index.html">
+                        <figure>
+                            <picture>
+                                <source srcset="./images/logo.webp" type="image/webp">
+                                <img src="./images/logo.png" title="My Lawyer Logo" alt="My Lawyer Logo">
+                            </picture>
+                        </figure>
+                    </a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="menu" aria-expanded="false">
+                    <a title="Go to home My Lawyer" aria-label="Go to home My Lawyer" href="./index.html">
+                        <figure>
+                            <picture>
+                                <source srcset="./images/logo-white.webp" type="image/webp">
+                                <img class="img-responsive collapsed-brand" src="./images/logo-white.png" title="My Lawyer logo white" alt="My Lawyer logo white">
+                            </picture>
+                        </figure>
+                    </a>
+                    
+                    <!--Menu-->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a title="Home" aria-label="Home" href="./index.html"> Home </a>
+                        </li>
+                        <li class="dropdown">
+                            <a title="About" aria-label="About" href="./about.html"> About </a>
+                        </li>
+                        <li class="dropdown">
+                            <a title="Services" aria-label="Services" href="./indexServices.html"> Services </a>
+                        </li>
+                        <li class="dropdown">
+                            <a title="Blog" aria-label="Blog" href="./indexBlog.html"> Blog </a>
+                        </li>
+                        <li class="dropdown">
+                            <a title="Contact" aria-label="Contact" href="./contacts.html"> Contact </a>
+                        </li>
+                    </ul>
+                    <!--/Menu-->
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="wrapper">
+        <!--breadcrumb-->
+        <div class="breadcrumb-container" data-background-url="./images/breadcrum-1.jpg" data-fixed="true">
+            <div class="overlay bg-color1 semi-transparent"></div>
+            <section class="container fluid-md-less">
+                <article class="row">
+                    <header class="col-md-12">
+                        <h1 class="big">
+                            Our <strong>news</strong>
+                        </h1>
+                    </header>
+                    <footer class="col-md-12">
+                        <nav class="navbar-breadcrumb">
+                            <ol class="breadcrumb-list">
+                                <li class="breadcrumb-item">
+                                    <a title="Home" aria-label="Home" href="<?= Url::to(['/wSystem/themes/preview', 'theme' => $theme, 'view' => '/site/index', 'layout' => 'main-transparent">
+								Home
+							</a>
+                                </li>
+                                <li class="breadcrumb-item active">
+                                    Our news
+                                </li>
+                            </ol>
+                        </nav>
+                    </footer>
+                </article>
+            </section>
+        </div>
+        <!--/breadcrumb-->
+        <!--news-->
+        <div class="section">
+            <div class="container fluid-md-less">
+                <div class="row">
+                    <!--sidebar-->
+                    <section class="col-md-3 col-md-push-9">
+                        <aside class="sidebar-menu sidebar-nav">
+                            <!--search box-->
+                            <div class="input-group search-sidebar">
+                                <input type="text" id="input-search" class="form-control input-search" placeholder="Search">
+                                <span class="input-group-btn">
+							<button id="btn-search"
+							        class="btn btn-search"
+							        type="button"
+							        title="Search"
+							        aria-label="Search">
+								<i class="fa fa-search"></i>
+							</button>
+						</span>
+                                <label for="input-search" class="hidden"></label>
+                            </div>
+                            <!--/search box-->
+                            <!--filters components-->
+                            <button class="btn btn-primary btn-block visible-xs visible-sm mt20 mb20" title="Filters" aria-label="Filters" type="button" data-toggle="collapse" data-target="#filters" aria-expanded="false" aria-controls="collapseExample">
+						Filters
+					</button>
+                            <div id="filters" class="collapse collapse-sidebar">
+                                <!--categories-->
+                                <h3 class="ll">
+                                    Categories
+                                </h3>
+                                <nav class="navbar" role="navigation">
+                                    <div class="navbar-collapse">
+                                        <ul id="ul1" class="nav navbar-nav">
+                                            <li>
+                                                <a class="collapsed" title="Interviewing" aria-label="Interviewing" role="button" data-toggle="collapse" aria-expanded="false" data-target="#dataToggle1" data-parent="#ul1">
+											Interviewing
+										</a>
+                                                <div id="dataToggle1" class="collapse">
+                                                    <ul id="ul2" class="nav nav-list">
+                                                        <li>
+                                                            <a title="Criminal lawyers" aria-label="Criminal lawyers" role="button">
+														Criminal lawyers
+													</a>
+                                                        </li>
+                                                        <li>
+                                                            <a title="Immigration lawyers" aria-label="Immigration lawyers" role="button">
+														Immigration lawyers
+													</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a title="Salary & Benefits" aria-label="Salary & Benefits" role="button">
+											Salary & Benefits
+										</a>
+                                            </li>
+                                            <li>
+                                                <a title="General Liability" aria-label="General Liability" role="button">
+											General Liability
+										</a>
+                                            </li>
+                                            <li>
+                                                <a title="Construction Law" aria-label="Construction Law" role="button">
+											Construction Law
+										</a>
+                                            </li>
+                                            <li>
+                                                <a title="Commercial Litigation" aria-label="Commercial Litigation" role="button">
+											Commercial Litigation
+										</a>
+                                            </li>
+                                            <li>
+                                                <a title="Intellectual Property" aria-label="Intellectual Property" role="button">
+											Intellectual Property
+										</a>
+                                            </li>
+                                            <li>
+                                                <a title="Legal Operations" aria-label="Legal Operations" role="button">
+											Legal Operations
+										</a>
+                                            </li>
+                                            <li>
+                                                <a title="Consumer Protection" aria-label="Consumer Protection" role="button">
+											Consumer Protection
+										</a>
+                                            </li>
+                                            <li>
+                                                <a title="Immigration Law" aria-label="Immigration Law" role="button">
+											Immigration Law
+										</a>
+                                            </li>
+                                            <li>
+                                                <a title="Pharmaceuticals" aria-label="Pharmaceuticals" role="button">
+											Pharmaceuticals
+										</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                                <!--/categories-->
+                                <!--tags -->
+                                <h3 class="ll hidden-xs hidden-sm">
+                                    Tags
+                                </h3>
+                                <nav class="tags hidden-xs hidden-sm">
+                                    <ul>
+                                        <li class="tag">
+                                            <a title="Tag 1" aria-label="Tag 1" role="button">
+										Tag 1
+									</a>
+                                        </li>
+                                        <li class="tag">
+                                            <a title="Tag 2" aria-label="Tag 2" role="button">
+										Tag 2
+									</a>
+                                        </li>
+                                        <li class="tag">
+                                            <a title="Tag 3" aria-label="Tag 3" role="button">
+										Tag 3
+									</a>
+                                        </li>
+                                        <li class="tag">
+                                            <a title="Tag 4" aria-label="Tag 4" role="button">
+										Tag 4
+									</a>
+                                        </li>
+                                        <li class="tag">
+                                            <a title="Tag 5" aria-label="Tag 5" role="button">
+										Tag 5
+									</a>
+                                        </li>
+                                        <li class="tag">
+                                            <a title="Tag 6" aria-label="Tag 6" role="button">
+										Tag 6
+									</a>
+                                        </li>
+                                        <li class="tag">
+                                            <a title="Tag 7" aria-label="Tag 7" role="button">
+										Tag 7
+									</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <!--/tags -->
+                                <button class="btn btn-primary btn-block visible-xs visible-sm mt20 mb20" title="Close filters" aria-label="Close filters" type="button" data-toggle="collapse" data-target="#filters" aria-expanded="false" aria-controls="filters">
+							Close filters
+						</button>
+                            </div>
+                            <!--/filters components-->
+                        </aside>
+                    </section>
+                    <!--/sidebar-->
+                    <!--news cards-->
+                    <div class="col-md-9 col-md-pull-3">
+                        <section class="row">
+                            <article class="col-sm-6 col-md-6">
+                                <div class="card card-news card-news-b">
+                                    <div class="aspect-rectangular">
+                                        <a title="Services and Legal Procedures" aria-label="Services and Legal Procedures" href="./viewBlog.html">
+                                            <figure>
+                                                <picture>
+                                                    <source srcset="./images/news-1.webp" type="image/webp">
+                                                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-original="./images/news-1.jpg" title="Services and Legal Procedures" alt="Services and Legal Procedures">
+                                                </picture>
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <header class="news-box">
+                                            <h2 class="title h3">
+                                                <a title="Services and Legal Procedures" aria-label="Services and Legal Procedures" href="./viewBlog.html">
+											Services and Legal Procedures
+										</a>
+                                            </h2>
+                                            <p class="summary">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque deserunt distinctio dolores ducimus est iure odit quibusdam ullam vero?
+                                            </p>
+                                        </header>
+                                        <footer>
+                                            <!--social xs-->
+                                            <ul class="social theme hidden-md hidden-lg">
+                                                <li>
+                                                    <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                        <i class="fab fa-facebook"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                        <i class="fab fa-pinterest"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                        <i class="fab fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <!--/social xs-->
+                                            <a class="btn btn-primary btn-lg btn-block-xs btn-block-sm" title="Read More" aria-label="Read More" href="./viewBlog.html">
+										Read More
+									</a>
+                                            <!--social sm, md y lg-->
+                                            <div class="share right hidden-xs hidden-sm">
+                                                <a class="btn btn-primary btn-lg" title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                    <i class="fas fa-share-alt"></i>
+                                                </a>
+                                                <div class="content-social-icons">
+                                                    <ul class="social theme">
+                                                        <li>
+                                                            <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                                <i class="fab fa-facebook"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                                <i class="fab fa-pinterest"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                                <i class="fab fa-twitter"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!--/social sm, md y lg-->
+                                        </footer>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="col-sm-6 col-md-6">
+                                <div class="card card-news card-news-b">
+                                    <div class="aspect-rectangular">
+                                        <a title="Fines and penalties" aria-label="Fines and penalties" href="./viewBlog.html">
+                                            <figure>
+                                                <picture>
+                                                    <source srcset="./images/news-2.webp" type="image/webp">
+                                                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-original="./images/news-2.jpg" title="Fines and penalties" alt="Fines and penalties">
+                                                </picture>
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <header class="news-box">
+                                            <h2 class="title h3">
+                                                <a title="Fines and penalties" aria-label="Fines and penalties" href="./viewBlog.html">
+											Fines and penalties
+										</a>
+                                            </h2>
+                                            <p class="summary">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque deserunt distinctio dolores ducimus est iure odit quibusdam ullam vero?
+                                            </p>
+                                        </header>
+                                        <footer>
+                                            <!--social xs-->
+                                            <ul class="social theme hidden-md hidden-lg">
+                                                <li>
+                                                    <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                        <i class="fab fa-facebook"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                        <i class="fab fa-pinterest"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                        <i class="fab fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <!--/social xs-->
+                                            <a class="btn btn-primary btn-lg btn-block-xs btn-block-sm" title="Read More" aria-label="Read More" href="./viewBlog.html">
+										Read More
+									</a>
+                                            <!--social sm, md y lg-->
+                                            <div class="share right hidden-xs hidden-sm">
+                                                <a class="btn btn-primary btn-lg" title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                    <i class="fas fa-share-alt"></i>
+                                                </a>
+                                                <div class="content-social-icons">
+                                                    <ul class="social theme">
+                                                        <li>
+                                                            <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                                <i class="fab fa-facebook"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                                <i class="fab fa-pinterest"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                                <i class="fab fa-twitter"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!--/social sm, md y lg-->
+                                        </footer>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="col-sm-6 col-md-6">
+                                <div class="card card-news card-news-b">
+                                    <div class="aspect-rectangular">
+                                        <a title="Services of Free Transit Lawyer" aria-label="Services of Free Transit Lawyer" href="./viewBlog.html">
+                                            <figure>
+                                                <picture>
+                                                    <source srcset="./images/news-3.webp" type="image/webp">
+                                                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-original="./images/news-3.jpg" title="Services of Free Transit Lawyer" alt="Services of Free Transit Lawyer">
+                                                </picture>
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <header class="news-box">
+                                            <h2 class="title h3">
+                                                <a title="Services of Free Transit Lawyer" aria-label="Services of Free Transit Lawyer" href="./viewBlog.html">
+											Services of Free Transit Lawyer
+										</a>
+                                            </h2>
+                                            <p class="summary">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque deserunt distinctio dolores ducimus est iure odit quibusdam ullam vero?
+                                            </p>
+                                        </header>
+                                        <footer>
+                                            <!--social xs-->
+                                            <ul class="social theme hidden-md hidden-lg">
+                                                <li>
+                                                    <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                        <i class="fab fa-facebook"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                        <i class="fab fa-pinterest"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                        <i class="fab fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <!--/social xs-->
+                                            <a class="btn btn-primary btn-lg btn-block-xs btn-block-sm" title="Read More" aria-label="Read More" href="./viewBlog.html">
+										Read More
+									</a>
+                                            <!--social sm, md y lg-->
+                                            <div class="share right hidden-xs hidden-sm">
+                                                <a class="btn btn-primary btn-lg" title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                    <i class="fas fa-share-alt"></i>
+                                                </a>
+                                                <div class="content-social-icons">
+                                                    <ul class="social theme">
+                                                        <li>
+                                                            <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                                <i class="fab fa-facebook"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                                <i class="fab fa-pinterest"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                                <i class="fab fa-twitter"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!--/social sm, md y lg-->
+                                        </footer>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="col-sm-6 col-md-6">
+                                <div class="card card-news card-news-b">
+                                    <div class="aspect-rectangular">
+                                        <a title="Protocol to Act in Prison Matters" aria-label="Protocol to Act in Prison Matters" href="./viewBlog.html">
+                                            <figure>
+                                                <picture>
+                                                    <source srcset="./images/news-4.webp" type="image/webp">
+                                                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-original="./images/news-4.jpg" title="Protocol to Act in Prison Matters" alt="Protocol to Act in Prison Matters">
+                                                </picture>
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <header class="news-box">
+                                            <h2 class="title h3">
+                                                <a title="Protocol to Act in Prison Matters" aria-label="Protocol to Act in Prison Matters" href="./viewBlog.html">
+											Protocol to Act in Prison Matters
+										</a>
+                                            </h2>
+                                            <p class="summary">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque deserunt distinctio dolores ducimus est iure odit quibusdam ullam vero?
+                                            </p>
+                                        </header>
+                                        <footer>
+                                            <!--social xs-->
+                                            <ul class="social theme hidden-md hidden-lg">
+                                                <li>
+                                                    <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                        <i class="fab fa-facebook"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                        <i class="fab fa-pinterest"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                        <i class="fab fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <!--/social xs-->
+                                            <a class="btn btn-primary btn-lg btn-block-xs btn-block-sm" title="Read More" aria-label="Read More" href="./viewBlog.html">
+										Read More
+									</a>
+                                            <!--social sm, md y lg-->
+                                            <div class="share right hidden-xs hidden-sm">
+                                                <a class="btn btn-primary btn-lg" title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                    <i class="fas fa-share-alt"></i>
+                                                </a>
+                                                <div class="content-social-icons">
+                                                    <ul class="social theme">
+                                                        <li>
+                                                            <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                                <i class="fab fa-facebook"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                                <i class="fab fa-pinterest"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                                <i class="fab fa-twitter"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!--/social sm, md y lg-->
+                                        </footer>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="col-sm-6 col-md-6">
+                                <div class="card card-news card-news-b">
+                                    <div class="aspect-rectangular">
+                                        <a title="Contract for the provision of professional" aria-label="Contract for the provision of professional" href="./viewBlog.html">
+                                            <figure>
+                                                <picture>
+                                                    <source srcset="./images/news-5.webp" type="image/webp">
+                                                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-original="./images/news-5.jpg" title="Contract for the provision of professional" alt="Contract for the provision of professional">
+                                                </picture>
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <header class="news-box">
+                                            <h2 class="title h3">
+                                                <a title="Contract for the provision of professional" aria-label="Contract for the provision of professional" href="./viewBlog.html">
+											Contract for the provision of professional
+										</a>
+                                            </h2>
+                                            <p class="summary">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque deserunt distinctio dolores ducimus est iure odit quibusdam ullam vero?
+                                            </p>
+                                        </header>
+                                        <footer>
+                                            <!--social xs-->
+                                            <ul class="social theme hidden-md hidden-lg">
+                                                <li>
+                                                    <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                        <i class="fab fa-facebook"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                        <i class="fab fa-pinterest"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                        <i class="fab fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <!--/social xs-->
+                                            <a class="btn btn-primary btn-lg btn-block-xs btn-block-sm" title="Read More" aria-label="Read More" href="./viewBlog.html">
+										Read More
+									</a>
+                                            <!--social sm, md y lg-->
+                                            <div class="share right hidden-xs hidden-sm">
+                                                <a class="btn btn-primary btn-lg" title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                    <i class="fas fa-share-alt"></i>
+                                                </a>
+                                                <div class="content-social-icons">
+                                                    <ul class="social theme">
+                                                        <li>
+                                                            <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                                <i class="fab fa-facebook"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                                <i class="fab fa-pinterest"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                                <i class="fab fa-twitter"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!--/social sm, md y lg-->
+                                        </footer>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="col-sm-6 col-md-6">
+                                <div class="card card-news card-news-b">
+                                    <div class="aspect-rectangular">
+                                        <a title="Service Succession Divorce Legalization" aria-label="Service Succession Divorce Legalization" href="./viewBlog.html">
+                                            <figure>
+                                                <picture>
+                                                    <source srcset="./images/news-6.webp" type="image/webp">
+                                                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-original="./images/news-6.jpg" title="Service Succession Divorce Legalization" alt="Service Succession Divorce Legalization">
+                                                </picture>
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <header class="news-box">
+                                            <h2 class="title h3">
+                                                <a title="Service Succession Divorce Legalization" aria-label="Service Succession Divorce Legalization" href="./viewBlog.html">
+											Service Succession Divorce Legalization
+										</a>
+                                            </h2>
+                                            <p class="summary">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque deserunt distinctio dolores ducimus est iure odit quibusdam ullam vero?
+                                            </p>
+                                        </header>
+                                        <footer>
+                                            <!--social xs-->
+                                            <ul class="social theme hidden-md hidden-lg">
+                                                <li>
+                                                    <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                        <i class="fab fa-facebook"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                        <i class="fab fa-pinterest"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                        <i class="fab fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <!--/social xs-->
+                                            <a class="btn btn-primary btn-lg btn-block-xs btn-block-sm" title="Read More" aria-label="Read More" href="./viewBlog.html">
+										Read More
+									</a>
+                                            <!--social sm, md y lg-->
+                                            <div class="share right hidden-xs hidden-sm">
+                                                <a class="btn btn-primary btn-lg" title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                    <i class="fas fa-share-alt"></i>
+                                                </a>
+                                                <div class="content-social-icons">
+                                                    <ul class="social theme">
+                                                        <li>
+                                                            <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                                <i class="fab fa-facebook"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                                <i class="fab fa-pinterest"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                                <i class="fab fa-twitter"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!--/social sm, md y lg-->
+                                        </footer>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="col-sm-6 col-md-6">
+                                <div class="card card-news card-news-b">
+                                    <div class="aspect-rectangular">
+                                        <a title="Slow progress migrating land charge data" aria-label="Slow progress migrating land charge data" href="./viewBlog.html">
+                                            <figure>
+                                                <picture>
+                                                    <source srcset="./images/news-7.webp" type="image/webp">
+                                                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-original="./images/news-7.jpg" title="Slow progress migrating land charge data" alt="Slow progress migrating land charge data">
+                                                </picture>
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <header class="news-box">
+                                            <h2 class="title h3">
+                                                <a title="Slow progress migrating land charge data" aria-label="Slow progress migrating land charge data" href="./viewBlog.html">
+											Slow progress migrating land charge data
+										</a>
+                                            </h2>
+                                            <p class="summary">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque deserunt distinctio dolores ducimus est iure odit quibusdam ullam vero?
+                                            </p>
+                                        </header>
+                                        <footer>
+                                            <!--social xs-->
+                                            <ul class="social theme hidden-md hidden-lg">
+                                                <li>
+                                                    <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                        <i class="fab fa-facebook"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                        <i class="fab fa-pinterest"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                        <i class="fab fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <!--/social xs-->
+                                            <a class="btn btn-primary btn-lg btn-block-xs btn-block-sm" title="Read More" aria-label="Read More" href="./viewBlog.html">
+										Read More
+									</a>
+                                            <!--social sm, md y lg-->
+                                            <div class="share right hidden-xs hidden-sm">
+                                                <a class="btn btn-primary btn-lg" title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                    <i class="fas fa-share-alt"></i>
+                                                </a>
+                                                <div class="content-social-icons">
+                                                    <ul class="social theme">
+                                                        <li>
+                                                            <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                                <i class="fab fa-facebook"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                                <i class="fab fa-pinterest"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                                <i class="fab fa-twitter"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!--/social sm, md y lg-->
+                                        </footer>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="col-sm-6 col-md-6">
+                                <div class="card card-news card-news-b">
+                                    <div class="aspect-rectangular">
+                                        <a title="Humiliated employee sued law firm over birthday ambush" aria-label="Humiliated employee sued law firm over birthday ambush" href="./viewBlog.html">
+                                            <figure>
+                                                <picture>
+                                                    <source srcset="./images/news-8.webp" type="image/webp">
+                                                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-original="./images/news-8.jpg" title="Humiliated employee sued law firm over birthday ambush" alt="Humiliated employee sued law firm over birthday ambush">
+                                                </picture>
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <header class="news-box">
+                                            <h2 class="title h3">
+                                                <a title="Humiliated employee sued law firm over birthday ambush" aria-label="Humiliated employee sued law firm over birthday ambush" href="./viewBlog.html">
+											Humiliated employee sued law firm over birthday ambush
+										</a>
+                                            </h2>
+                                            <p class="summary">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque deserunt distinctio dolores ducimus est iure odit quibusdam ullam vero?
+                                            </p>
+                                        </header>
+                                        <footer>
+                                            <!--social xs-->
+                                            <ul class="social theme hidden-md hidden-lg">
+                                                <li>
+                                                    <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                        <i class="fab fa-facebook"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                        <i class="fab fa-pinterest"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                        <i class="fab fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <!--/social xs-->
+                                            <a class="btn btn-primary btn-lg btn-block-xs btn-block-sm" title="Read More" aria-label="Read More" href="./viewBlog.html">
+										Read More
+									</a>
+                                            <!--social sm, md y lg-->
+                                            <div class="share right hidden-xs hidden-sm">
+                                                <a class="btn btn-primary btn-lg" title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                    <i class="fas fa-share-alt"></i>
+                                                </a>
+                                                <div class="content-social-icons">
+                                                    <ul class="social theme">
+                                                        <li>
+                                                            <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                                <i class="fab fa-facebook"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                                <i class="fab fa-pinterest"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a title="Share on social networks" aria-label="Share on social networks" role="button">
+                                                                <i class="fab fa-twitter"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!--/social sm, md y lg-->
+                                        </footer>
+                                    </div>
+                                </div>
+                            </article>
+                            <aside class="col-md-12 text-center">
+                                <nav class="pagination">
+                                    <ul class="pagination">
+                                        <li>
+                                            <a title="Previous" aria-label="Previous" role="button">
+                                                <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item active">
+                                            <a class="page-link" title="1" aria-label="1" role="button">1
+									</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" title="2" aria-label="2" role="button">2
+									</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" title="3" aria-label="3" role="button">3
+									</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" title="4" aria-label="4" role="button">4
+									</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" title="5" aria-label="5" role="button">5
+									</a>
+                                        </li>
+                                        <li>
+                                            <a title="Next" aria-label="Next" role="button">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </aside>
+                            <!--tags -->
+                            <article class="col-md-12 hidden-lg hidden-md">
+                                <h3 class="ll">
+                                    Tags
+                                </h3>
+                                <nav class="tags">
+                                    <ul>
+                                        <li class="tag">
+                                            <a title="Tag 1" aria-label="Tag 1" role="button">
+										Tag 1
+									</a>
+                                        </li>
+                                        <li class="tag">
+                                            <a title="Tag 2" aria-label="Tag 2" role="button">
+										Tag 2
+									</a>
+                                        </li>
+                                        <li class="tag">
+                                            <a title="Tag 3" aria-label="Tag 3" role="button">
+										Tag 3
+									</a>
+                                        </li>
+                                        <li class="tag">
+                                            <a title="Tag 4" aria-label="Tag 4" role="button">
+										Tag 4
+									</a>
+                                        </li>
+                                        <li class="tag">
+                                            <a title="Tag 5" aria-label="Tag 5" role="button">
+										Tag 5
+									</a>
+                                        </li>
+                                        <li class="tag">
+                                            <a title="Tag 6" aria-label="Tag 6" role="button">
+										Tag 6
+									</a>
+                                        </li>
+                                        <li class="tag">
+                                            <a title="Tag 7" aria-label="Tag 7" role="button">
+										Tag 7
+									</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </article>
+                            <!--/tags -->
+                        </section>
+                    </div>
+                    <!--/news cards-->
+                </div>
+            </div>
+        </div>
+        <!--/news-->
+    </main>
+    <footer class="center">
+        <div class="footer" data-background-url="./images/footer.jpg" data-fixed="true">
+            <div class="overlay semi-transparent"></div>
+            <section class="row m0">
+                <aside class="col-md-6">
+                    <div class="spacing-footer">
+                        <a title="Go to home My Lawyer" aria-label="Go to home My Lawyer" class="footer-brand" href="./index.html">
+                            <figure>
+                                <picture>
+                                    <source srcset="./images/logo-white.webp" type="image/webp">
+                                    <img class="img-responsive collapsed-brand" src="./images/logo-white.png" title="My Lawyer logo white" alt="My Lawyer logo white">
+                                </picture>
+                            </figure>
+                        </a>
+                        <ul class="social original mt30">
+                            <li>
+                                <a title="Share on: Facebook" aria-label="Share on: Facebook" role="button">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a title="Share on: Google Plus" aria-label="Share on:  Google Plus" role="button">
+                                    <i class="fab fa-google-plus"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a title="Share on: Pinterest" aria-label="Share on:  Pinterest" role="button">
+                                    <i class="fab fa-pinterest"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a title="Share on: Twitter" aria-label="Share on: Twitter" role="button">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+                <article class="col-md-6">
+                    <div class="spacing-footer pl50-md pl100-lg">
+                        <header>
+                            <h4 class="h2 ll">
+                                Our <span>Data</span>
+                            </h4>
+                        </header>
+                        <address>
+                                <div class="address">
+                                    <i class="fas fa-map-marker mr5"></i>
+                                    <b>
+                                        Address:
+                                    </b>
+                                    La Marina ST. 35, Santa Cruz de Tenerife, Spain
+                                </div>
+                                <div class="address">
+                                    <i class="fas fa-phone mr5"></i>
+                                    <b>
+                                        Tel:
+                                        <sup>1</sup>
+                                    </b>
+                                    +34 922 985 058
+                                </div>
+                                <div class="address">
+                                    <i class="fas fa-phone mr5"></i>
+                                    <b>
+                                        Tel:
+                                        <sup>2</sup>
+                                    </b>
+                                    +34 922 985 058 - ext 101
+                                </div>
+                                <div class="address">
+                                    <i class="fas fa-mobile mr5"></i>
+                                    <b>
+                                        Cell:
+                                        <sup>1</sup>
+                                    </b>
+                                    +34 922 985 058
+                                </div>
+                                <div class="address">
+                                    <i class="fas fa-mobile mr5"></i>
+                                    <b>
+                                        Cell:
+                                        <sup>2</sup>
+                                    </b>
+                                    +34 922 985 058 - ext 101
+                                </div>
+                                <div class="address">
+                                    <i class="fas fa-fax mr5"></i>
+                                    <b>
+                                        Fax:
+                                    </b>
+                                    +34 922 985 058
+                                </div>
+                                <div class="address">
+                                    <i class="fas fa-envelope mr5"></i>
+                                    <b>
+                                        Email:
+                                    </b>
+                                    <a title="Email"
+                                       aria-label="Email"
+                                       role="button">
+                                        info@mylawyer.com
+                                    </a>
+                                </div>
+                            </address>
+                    </div>
+                </article>
+            </section>
+        </div>
+        <div class="sub-footer">
+            <div class="container fluid-md-less">
+                <section class="row">
+                    <article class="col-sm-6 col-sm-offset-3 mb20">
+                        <div class="copyright">
+                            <p>
+                                <i class="fa fa-copyright"></i> 2019, All rights reserved
+                                <b>
+                                        My Lawyer
+                                    </b>
+                            </p>
+                            <p>
+                                Designed and developed by:
+                                <a title="yonex27000@gmail.com" aria-label="yonex27000@gmail.com" target="_blank" rel="noopener" href="mailto:yonex27000@gmail.com">
+                                    <b>
+                                            gmail.com
+                                        </b>
+                                </a>
+                            </p>
+                        </div>
+                    </article>
+                    <article class="col-sm-6 col-sm-offset-3">
+                        <div class="advice">
+                            <p>
+                                <a title="Cookies policy" aria-label="Cookies policy" role="button">
+                                    <i class="fas fa-gavel ml5"></i>
+                                    <b>
+                                            Cookies policy
+                                        </b>
+                                </a>
+                                <a title="Legal warning" aria-label="Legal warning" role="button">
+                                    <i class="fas fa-balance-scale ml5"></i>
+                                    <b>
+                                            Legal warning
+                                        </b>
+                                </a>
+                            </p>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </div>
+    </footer>
+    <a class="btn btn-primary back-to-top" title="Go up" aria-label="Go up" role="button">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+    <script src="./js/jquery.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/jquery/buttons.js"></script>
+  <script src="./js/jquery/sidebar.js"></script>
+  <script src="./js/jquery/helpers.js"></script>
+  <script src="./js/jquery/images.js"></script>
+</body>
+
+</html>
